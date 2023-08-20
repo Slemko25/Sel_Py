@@ -12,4 +12,4 @@ def fixtureSetup(request):
         driver = webdriver.Chrome(service=Service(ChromeDriverManager("").install()))
     elif request.param == "Firefox":
         driver = webdriver.Firefox(service=Service(GeckoDriverManager("").install()))
-    return driver
+    yield driver
