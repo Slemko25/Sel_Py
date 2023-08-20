@@ -5,7 +5,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 import time
 
 driver = webdriver.Chrome(service=Service(ChromeDriverManager("").install()))
-driver.get("https://www.saucedemo.com")
+driver.get("https://magento.softwaretestingboard.com")
 
 time.sleep(5)
 
